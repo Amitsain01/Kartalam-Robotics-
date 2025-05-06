@@ -1,0 +1,1341 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Rajdhani:400,500,700&display=swap");
+/* line 28, ../../../../Desktop/woostore/assets/css/main.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 32, ../../../../Desktop/woostore/assets/css/main.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 37, ../../../../Desktop/woostore/assets/css/main.scss */
+img {
+  max-width: 100%;
+}
+
+
+/* ------------------------------------ */
+
+/* css login page */
+/* General reset */
+
+/* -------------------------- */
+
+/* order form css */
+.kartalam-container {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 800px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.kartalam-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.kartalam-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.kartalam-input,
+.kartalam-select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.kartalam-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.kartalam-btn:hover {
+  background-color: #45a049;
+}
+
+.kartalam-price {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+
+
+
+
+
+/* ---------------------------------------------- */
+
+
+
+
+/* line 42, ../../../../Desktop/woostore/assets/css/main.scss */
+.form-control {
+  border-radius: 0;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border: 1px solid #eee;
+  color: #111B25;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/* line 56, ../../../../Desktop/woostore/assets/css/main.scss */
+.modal.flip-vertical {
+  perspective: 1200px;
+}
+
+/* line 59, ../../../../Desktop/woostore/assets/css/main.scss */
+.modal.flip-vertical .modal-dialog {
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transform: rotateX(-75deg);
+  transition: all 320ms;
+  opacity: 0;
+}
+
+/* line 68, ../../../../Desktop/woostore/assets/css/main.scss */
+.modal.flip-vertical.show .modal-dialog {
+  transform: rotateX(0deg);
+  opacity: 1;
+}
+
+/* line 78, ../../../../Desktop/woostore/assets/css/main.scss */
+.card {
+  margin-bottom: 14px;
+  border-radius: 0 !important;
+  border: 1px solid #eee;
+}
+
+/* line 84, ../../../../Desktop/woostore/assets/css/main.scss */
+.card-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+  padding: 1.3rem;
+}
+
+/* line 90, ../../../../Desktop/woostore/assets/css/main.scss */
+.card-footer {
+  background-color: #fff;
+  border: 0;
+}
+
+/* line 96, ../../../../Desktop/woostore/assets/css/main.scss */
+.nav-tabs {
+  justify-content: center;
+}
+
+/* line 99, ../../../../Desktop/woostore/assets/css/main.scss */
+.nav-tabs .nav-link {
+  color: #000;
+  border: none;
+}
+
+/* line 103, ../../../../Desktop/woostore/assets/css/main.scss */
+.nav-tabs .nav-link.active {
+  border-bottom: 1px solid #0074f1;
+}
+
+/* line 110, ../../../../Desktop/woostore/assets/css/main.scss */
+.btn-primary-soft {
+  color: #0074f1;
+  background-color: rgba(0, 116, 241, 0.1);
+}
+
+/* line 115, ../../../../Desktop/woostore/assets/css/main.scss */
+.btn-secondary-soft {
+  color: #7a87a0;
+  background-color: rgba(122, 135, 160, 0.1);
+}
+
+/* line 120, ../../../../Desktop/woostore/assets/css/main.scss */
+.btn-success-soft {
+  color: #07bf58;
+  background-color: rgba(7, 191, 88, 0.1);
+}
+
+/* line 125, ../../../../Desktop/woostore/assets/css/main.scss */
+.btn-dark-soft {
+  color: #FFBF00;
+  background-color: rgba(255, 191, 0, 0.1);
+}
+
+/* line 130, ../../../../Desktop/woostore/assets/css/main.scss */
+.btn-danger-soft {
+  color: #ef1f3e;
+  background-color: rgba(239, 31, 62, 0.1);
+}
+
+/* line 135, ../../../../Desktop/woostore/assets/css/main.scss */
+.btn-info-soft {
+  color: #0ac1ea;
+  background-color: rgba(10, 193, 234, 0.1);
+  border-color: rgba(10, 193, 234, 0);
+}
+
+/* line 141, ../../../../Desktop/woostore/assets/css/main.scss */
+.btn-light-soft {
+  color: #adb7cc;
+  background-color: rgba(173, 183, 204, 0.1);
+}
+
+/* line 146, ../../../../Desktop/woostore/assets/css/main.scss */
+.btn-dark-soft {
+  color: #214971;
+  background-color: rgba(33, 73, 113, 0.1);
+}
+
+/* line 152, ../../../../Desktop/woostore/assets/css/main.scss */
+.bg-primary-soft {
+  background-color: rgba(0, 116, 241, 0.1);
+}
+
+/* line 160, ../../../../Desktop/woostore/assets/css/main.scss */
+.radio-primary .custom-control-input:checked ~ .custom-control-label::before,
+.radio-primary .custom-control-input:disabled:checked ~ .custom-control-label::before {
+  background-color: #0074f1;
+  border-color: #0074f1;
+}
+
+/* line 169, ../../../../Desktop/woostore/assets/css/main.scss */
+.list_group .list_group_item {
+  border-color: #eee;
+}
+
+/* line 172, ../../../../Desktop/woostore/assets/css/main.scss */
+.list_group .list_group_item.active {
+  background-color: rgba(0, 116, 241, 0.1);
+  color: #000;
+}
+
+/* line 179, ../../../../Desktop/woostore/assets/css/main.scss */
+.list_group.list_group-borderless .list_group_item {
+  border: 0;
+}
+
+/* line 185, ../../../../Desktop/woostore/assets/css/main.scss */
+.list_group.list_group-contracted .list_group_item {
+  padding: 3px 12px;
+  font-size: 14px;
+}
+
+/* line 193, ../../../../Desktop/woostore/assets/css/main.scss */
+.list_group_media .list_group_item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: none !important;
+}
+
+/* line 199, ../../../../Desktop/woostore/assets/css/main.scss */
+.list_group_media .list_group_item .media .media_graphic {
+  display: flex;
+  margin-right: 10px;
+  width: 50px;
+}
+
+/* line 204, ../../../../Desktop/woostore/assets/css/main.scss */
+.list_group_media .list_group_item .media .media_graphic i {
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/* line 210, ../../../../Desktop/woostore/assets/css/main.scss */
+.list_group_media .list_group_item .media .media_graphic image {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+/* line 218, ../../../../Desktop/woostore/assets/css/main.scss */
+.list_group_media .list_group_item .media .media-body h6 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #214971;
+  margin-bottom: 0;
+}
+
+/* line 225, ../../../../Desktop/woostore/assets/css/main.scss */
+.list_group_media .list_group_item .media .media-body p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #adb7cc;
+  margin-bottom: 0;
+}
+
+/* line 237, ../../../../Desktop/woostore/assets/css/main.scss */
+.avatar {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+/* line 242, ../../../../Desktop/woostore/assets/css/main.scss */
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* line 250, ../../../../Desktop/woostore/assets/css/main.scss */
+.avatar-default {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 266, ../../../../Desktop/woostore/assets/css/main.scss */
+.avatar-online::after {
+  content: '';
+  position: absolute;
+  bottom: 1px;
+  right: 2px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+/* line 278, ../../../../Desktop/woostore/assets/css/main.scss */
+.avatar-online::after {
+  background-color: #07bf58;
+}
+
+/* line 282, ../../../../Desktop/woostore/assets/css/main.scss */
+.avatar-xs {
+  width: 25px;
+  height: 25px;
+}
+
+/* line 286, ../../../../Desktop/woostore/assets/css/main.scss */
+.avatar-xs .avatar-default {
+  font-size: 10px;
+}
+
+/* line 292, ../../../../Desktop/woostore/assets/css/main.scss */
+.avatar-xs.avatar-xs.avatar-offline::after, .avatar-xs.avatar-xs.avatar-online::after {
+  width: 5px;
+  height: 5px;
+  right: 1px;
+  border-width: 1px;
+}
+
+/* line 301, ../../../../Desktop/woostore/assets/css/main.scss */
+.avatar-sm {
+  width: 35px;
+  height: 35px;
+}
+
+/* line 305, ../../../../Desktop/woostore/assets/css/main.scss */
+.avatar-sm .avatar-default {
+  font-size: 14px;
+}
+
+/* line 311, ../../../../Desktop/woostore/assets/css/main.scss */
+.avatar-sm.avatar-sm.avatar-offline::after, .avatar-sm.avatar-sm.avatar-online::after {
+  width: 7px;
+  height: 7px;
+  right: 0;
+}
+
+/* line 319, ../../../../Desktop/woostore/assets/css/main.scss */
+.avatar-md {
+  width: 45px;
+  height: 45px;
+}
+
+/* line 323, ../../../../Desktop/woostore/assets/css/main.scss */
+.avatar-md .avatar-default {
+  font-size: 18px;
+}
+
+/* line 328, ../../../../Desktop/woostore/assets/css/main.scss */
+.avatar-md.avatar-md.avatar-online::after {
+  width: 8px;
+  height: 8px;
+  right: 2px;
+  bottom: 1px;
+}
+
+/* line 337, ../../../../Desktop/woostore/assets/css/main.scss */
+.avatar-lg {
+  width: 65px;
+  height: 65px;
+}
+
+/* line 341, ../../../../Desktop/woostore/assets/css/main.scss */
+.avatar-lg .avatar-default {
+  font-size: 24px;
+}
+
+/* line 346, ../../../../Desktop/woostore/assets/css/main.scss */
+.avatar-lg.avatar-lg.avatar-online::after {
+  width: 10px;
+  height: 10px;
+  right: 4px;
+  bottom: 3px;
+}
+
+/* line 356, ../../../../Desktop/woostore/assets/css/main.scss */
+.faq-default .card-header button[aria-expanded="false"]:after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: -3px;
+  font-weight: 500;
+  color: #d4cfcf;
+  padding: 10px;
+}
+
+/* line 366, ../../../../Desktop/woostore/assets/css/main.scss */
+.faq-default .card-header button[aria-expanded="true"]:after {
+  content: "-";
+  position: absolute;
+  right: 0;
+  top: -3px;
+  font-weight: 500;
+  color: #d4cfcf;
+  padding: 10px;
+}
+
+/* line 377, ../../../../Desktop/woostore/assets/css/main.scss */
+.faq-default .card-header {
+  background-color: #fff;
+  padding: 0 20px;
+  border: 0;
+}
+
+/* line 382, ../../../../Desktop/woostore/assets/css/main.scss */
+.faq-default .card-header button {
+  text-decoration: none;
+  font-size: 14px;
+  color: #214971;
+}
+
+/* line 399, ../../../../Desktop/woostore/assets/css/main.scss */
+.faq-v4 .card {
+  border: 0;
+}
+
+/* line 402, ../../../../Desktop/woostore/assets/css/main.scss */
+.faq-v4 .card .card-header {
+  background-color: #00e095;
+  padding: 0 18px;
+  border: none;
+  color: #000;
+}
+
+/* line 408, ../../../../Desktop/woostore/assets/css/main.scss */
+.faq-v4 .card .card-header button {
+  font-weight: 600;
+}
+
+/* line 412, ../../../../Desktop/woostore/assets/css/main.scss */
+.faq-v4 .card .card-header button:after {
+  content: "" !important;
+}
+
+/* line 417, ../../../../Desktop/woostore/assets/css/main.scss */
+.faq-v4 .card .card-body {
+  padding-top: 15px;
+  padding-left: 30px;
+}
+
+/* line 426, ../../../../Desktop/woostore/assets/css/main.scss */
+.faq-v5 .card {
+  border: 0;
+}
+
+/* line 429, ../../../../Desktop/woostore/assets/css/main.scss */
+.faq-v5 .card .card-header {
+  border: 1px solid #eee;
+  padding: 0 18px;
+  border: none;
+  color: #000;
+}
+
+/* line 435, ../../../../Desktop/woostore/assets/css/main.scss */
+.faq-v5 .card .card-header button {
+  font-weight: 600;
+}
+
+/* line 439, ../../../../Desktop/woostore/assets/css/main.scss */
+.faq-v5 .card .card-header button:after {
+  content: "" !important;
+}
+
+/* line 444, ../../../../Desktop/woostore/assets/css/main.scss */
+.faq-v5 .card .card-body {
+  padding-top: 15px;
+  padding-left: 30px;
+}
+
+/* line 448, ../../../../Desktop/woostore/assets/css/main.scss */
+.faq-v5 .card .card-body::first-letter {
+  color: #FFBF00;
+  float: left;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1;
+  margin-right: 12px;
+  text-shadow: 3px 5px 0 #adb7cc;
+  transform: rotate(-2deg);
+}
+
+/* line 464, ../../../../Desktop/woostore/assets/css/main.scss */
+.border-none {
+  border-width: 0px !important;
+}
+
+/* line 468, ../../../../Desktop/woostore/assets/css/main.scss */
+.radius-none {
+  border-radius: 0px !important;
+}
+
+/* line 472, ../../../../Desktop/woostore/assets/css/main.scss */
+.radius {
+  border-radius: 4px !important;
+}
+
+/* line 476, ../../../../Desktop/woostore/assets/css/main.scss */
+.bg-none {
+  background-color: transparent !important;
+}
+
+/* line 480, ../../../../Desktop/woostore/assets/css/main.scss */
+.bg-blue {
+  background-color: #FFE919;
+}
+
+/* line 484, ../../../../Desktop/woostore/assets/css/main.scss */
+.bg-dark {
+  background-color: #111B25;
+}
+
+/* line 488, ../../../../Desktop/woostore/assets/css/main.scss */
+.bg-blue {
+  background-color: #344D68;
+}
+
+/* line 495, ../../../../Desktop/woostore/assets/css/main.scss */
+.slim_topbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 7px 15px;
+  background-color: #111B25;
+  z-index: 1030;
+}
+
+/* line 504, ../../../../Desktop/woostore/assets/css/main.scss */
+.slim_topbar h6 {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* line 516, ../../../../Desktop/woostore/assets/css/main.scss */
+.navbar_top {
+  justify-content: space-between;
+  padding-top: 0;
+  height: 75px;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+  margin-top: 25px;
+}
+
+/* line 524, ../../../../Desktop/woostore/assets/css/main.scss */
+.navbar_top .navbar-brand {
+  color: #344D68;
+  line-height: 55px;
+}
+
+/* line 528, ../../../../Desktop/woostore/assets/css/main.scss */
+.navbar_top .navbar-brand img {
+  height: 20px;
+  max-height: 20px;
+}
+
+/* line 534, ../../../../Desktop/woostore/assets/css/main.scss */
+.navbar_top .navbar-brand:nth-child(4) img {
+  height: 25px !important;
+  max-height: 25px !important;
+}
+
+/* line 545, ../../../../Desktop/woostore/assets/css/main.scss */
+.navbar_top .navbar-nav .nav-item.active a, .navbar_top .navbar-nav .nav-item:hover a {
+  color: #f9423a;
+}
+
+/* line 550, ../../../../Desktop/woostore/assets/css/main.scss */
+.navbar_top .navbar-nav .nav-item a {
+  color: #111B25;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* line 563, ../../../../Desktop/woostore/assets/css/main.scss */
+.navbar_top .site_logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 571, ../../../../Desktop/woostore/assets/css/main.scss */
+.navbar-toggler-icon {
+  color: #FFE919;
+}
+
+/* line 575, ../../../../Desktop/woostore/assets/css/main.scss */
+.navbar-collapse {
+  background-color: #fff;
+}
+
+/* line 596, ../../../../Desktop/woostore/assets/css/main.scss */
+#icon_modal_location .modal-content {
+  border-radius: 1rem;
+}
+
+/* line 599, ../../../../Desktop/woostore/assets/css/main.scss */
+#icon_modal_location .modal-content .modal-header {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+/* line 604, ../../../../Desktop/woostore/assets/css/main.scss */
+#icon_modal_location .modal-content .modal-footer {
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+/* line 609, ../../../../Desktop/woostore/assets/css/main.scss */
+#icon_modal_location .modal-content iframe {
+  margin-bottom: -8px;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+  /* line 616, ../../../../Desktop/woostore/assets/css/main.scss */
+  #icon_modal_location .modal-dialog {
+    max-width: 800px;
+    margin: 1.75rem auto;
+  }
+}
+
+/* line 625, ../../../../Desktop/woostore/assets/css/main.scss */
+#phone_us_modal .modal-body img {
+  width: 100px;
+  height: auto;
+  margin: 0 auto;
+  padding: 15px 0 25px;
+}
+
+/* line 632, ../../../../Desktop/woostore/assets/css/main.scss */
+#phone_us_modal .modal-body h6 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* line 642, ../../../../Desktop/woostore/assets/css/main.scss */
+#contact_us_modal .modal-footer img {
+  height: 35px;
+}
+
+/* line 647, ../../../../Desktop/woostore/assets/css/main.scss */
+#contact_us_modal i {
+  font-size: 22px;
+}
+
+/* line 650, ../../../../Desktop/woostore/assets/css/main.scss */
+#contact_us_modal p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+/* line 657, ../../../../Desktop/woostore/assets/css/main.scss */
+.site_banner_home {
+  height: 580px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 662, ../../../../Desktop/woostore/assets/css/main.scss */
+.site_banner_home > div {
+  max-height: 580px;
+}
+
+
+/* ------------------------------------------------------- */
+/* line 666, ../../../../Desktop/woostore/assets/css/main.scss */
+/* .site_banner_home .banner_overlay {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  background-color: #fff;
+  background-image: url(../images/products/banner_drone.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(8px);
+  -webkit-filter: blur(4px);
+}
+
+/* line 681, ../../../../Desktop/woostore/assets/css/main.scss */
+/* .site_banner_home .banner_overlay .banner_heading h2, .site_banner_home .banner_overlay .banner_heading h3 {
+  padding: 0 50px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.05px;
+  text-transform: uppercase;
+} */
+
+/* line 690, ../../../../Desktop/woostore/assets/css/main.scss */
+/* .site_banner_home .banner_overlay .banner_heading h3 {
+  font-size: 44px;
+}  */
+/* =========================================== */
+
+
+/* Container for the banner */
+.site_banner_home {
+  position: relative;
+  width: 100%;
+}
+
+.site_banner_home .banner_overlay {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  background-image: url(../images/products/banner_drone.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(8px); /* Apply blur to the background */
+  -webkit-filter: blur(8px); /* Ensure it works in WebKit browsers */
+  /* z-index: 2; */
+}
+
+.site_banner_home .banner_heading {
+  position: absolute; /* Position the text above the background */
+  top: 50%; /* Adjust the vertical position of the text */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the text */
+  z-index: 2; /* Make sure the text stays above the blurred background */
+  text-align: center;
+  color: #fff; /* White text to stand out against the background */
+}
+
+.site_banner_home .banner_heading h2,
+.site_banner_home .banner_heading h3 {
+  margin: 0;
+  padding: 0 50px;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.05px;
+  text-transform: uppercase;
+}
+
+.site_banner_home .banner_heading h2 {
+  font-size: 32px;
+}
+
+.site_banner_home .banner_heading h3 {
+  font-size: 44px;
+}
+
+
+
+
+
+/* ===================================================== */
+
+/* line 697, ../../../../Desktop/woostore/assets/css/main.scss */
+.site_banner_inner {
+  height: 380px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 702, ../../../../Desktop/woostore/assets/css/main.scss */
+.site_banner_inner > div {
+  max-height: 380px;
+}
+
+/* line 706, ../../../../Desktop/woostore/assets/css/main.scss */
+.site_banner_inner .banner_overlay_inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 380px;
+  background-color: #fff;
+  background-image: linear-gradient(to bottom, rgba(255, 222, 212, 0.5), rgba(52, 77, 104, 0.7)), url(../images/products/banner_drone.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 721, ../../../../Desktop/woostore/assets/css/main.scss */
+.site_banner_inner .banner_overlay_inner .banner_heading_inner h2, .site_banner_inner .banner_overlay_inner .banner_heading_inner h3 {
+  padding: 0 50px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.05px;
+  text-transform: uppercase;
+}
+
+/* line 730, ../../../../Desktop/woostore/assets/css/main.scss */
+.site_banner_inner .banner_overlay_inner .banner_heading_inner h3 {
+  font-size: 44px;
+}
+
+/* line 737, ../../../../Desktop/woostore/assets/css/main.scss */
+.site_banner_inner_products {
+  margin-top: 100px;
+  height: 180px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 748, ../../../../Desktop/woostore/assets/css/main.scss */
+.site_banner_inner_products .banner_heading_inner h3 {
+  padding: 0 50px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.05px;
+  color: #111B25;
+  text-transform: uppercase;
+}
+
+/* line 760, ../../../../Desktop/woostore/assets/css/main.scss */
+.home_promo {
+  margin-top: -100px;
+  margin-bottom: 75px;
+}
+
+/* line 764, ../../../../Desktop/woostore/assets/css/main.scss */
+.home_promo .row {
+  min-height: 352px;
+}
+
+/* line 769, ../../../../Desktop/woostore/assets/css/main.scss */
+.home_promo .home_promo_image img {
+  max-width: 100%;
+}
+
+/* line 774, ../../../../Desktop/woostore/assets/css/main.scss */
+.home_promo .product_promo_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #111B25;
+  height: 347px;
+}
+
+/* line 781, ../../../../Desktop/woostore/assets/css/main.scss */
+.home_promo .product_promo_info .promo_sub {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* line 789, ../../../../Desktop/woostore/assets/css/main.scss */
+.home_promo .product_promo_info .promo_main {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* line 797, ../../../../Desktop/woostore/assets/css/main.scss */
+.home_promo .product_promo_info button {
+  background-color: #fff;
+  color: #111B25;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  border-width: 0px;
+}
+
+/* line 806, ../../../../Desktop/woostore/assets/css/main.scss */
+.home_promo .product_promo_info .promo_footer {
+  font-size: 10px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* line 816, ../../../../Desktop/woostore/assets/css/main.scss */
+.features {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+/* line 825, ../../../../Desktop/woostore/assets/css/main.scss */
+.features .feature-card {
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+  background: #fff;
+  border-radius: 2px;
+  border: 0;
+  transition: all .3s ease;
+  padding: 30px 15px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 839, ../../../../Desktop/woostore/assets/css/main.scss */
+.features .feature-card:hover {
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* line 843, ../../../../Desktop/woostore/assets/css/main.scss */
+.features .feature-card .icon-section {
+  padding: 25px 0;
+}
+
+/* line 846, ../../../../Desktop/woostore/assets/css/main.scss */
+.features .feature-card .icon-section span {
+  font-size: 44px;
+  color: #00e095;
+}
+
+/* line 851, ../../../../Desktop/woostore/assets/css/main.scss */
+.features .feature-card .icon-section .features-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #111B25;
+}
+
+/* line 860, ../../../../Desktop/woostore/assets/css/main.scss */
+.subscribe {
+  padding: 75px 0;
+  background-color: #00e095;
+}
+
+/* line 864, ../../../../Desktop/woostore/assets/css/main.scss */
+.subscribe h6 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* line 870, ../../../../Desktop/woostore/assets/css/main.scss */
+.subscribe p {
+  margin-bottom: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* line 877, ../../../../Desktop/woostore/assets/css/main.scss */
+.subscribe .form-control {
+  padding: 1.375rem .75rem;
+  background-color: #fff;
+  border-width: none;
+  color: #111B25;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+/* line 889, ../../../../Desktop/woostore/assets/css/main.scss */
+.subscribe .input-group-append button {
+  min-width: 100px;
+  color: #111B25;
+  background-color: #FFE919;
+  border-color: #FFE919;
+}
+
+/* line 898, ../../../../Desktop/woostore/assets/css/main.scss */
+.custom_rf {
+  padding: 75px 0;
+  background-color: #111B25;
+}
+
+/* line 902, ../../../../Desktop/woostore/assets/css/main.scss */
+.custom_rf h6 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* line 908, ../../../../Desktop/woostore/assets/css/main.scss */
+.custom_rf p {
+  margin-bottom: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* line 917, ../../../../Desktop/woostore/assets/css/main.scss */
+section .section-title {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #344D68;
+}
+
+/* line 925, ../../../../Desktop/woostore/assets/css/main.scss */
+section .section-subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #111B25;
+}
+
+/* line 933, ../../../../Desktop/woostore/assets/css/main.scss */
+.gutter_all {
+  padding: 5px;
+}
+
+/* line 937, ../../../../Desktop/woostore/assets/css/main.scss */
+.gutter_top_half {
+  padding-top: 2.5px;
+}
+
+/* line 941, ../../../../Desktop/woostore/assets/css/main.scss */
+.gutter_right_half {
+  padding-right: 2.5px;
+}
+
+/* line 945, ../../../../Desktop/woostore/assets/css/main.scss */
+.gutter_left_half {
+  padding-left: 2.5px;
+}
+
+/* line 949, ../../../../Desktop/woostore/assets/css/main.scss */
+.gutter_bottom_half {
+  padding-bottom: 2.5px;
+}
+
+/* line 953, ../../../../Desktop/woostore/assets/css/main.scss */
+.products {
+  background-color: #fff;
+  margin-bottom: 25px;
+}
+
+/* line 959, ../../../../Desktop/woostore/assets/css/main.scss */
+.products .products_list .product_item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(238, 238, 238, 0.5);
+}
+
+/* line 967, ../../../../Desktop/woostore/assets/css/main.scss */
+.products .products_list .product_item .title {
+  position: absolute;
+  top: 35px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #8a8d8f;
+}
+
+/* line 978, ../../../../Desktop/woostore/assets/css/main.scss */
+.products .products_list .product_item .product_item_image {
+  max-width: 100%;
+}
+
+/* line 982, ../../../../Desktop/woostore/assets/css/main.scss */
+.products .products_list .product_item .product_item_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px 25px;
+  background-color: #fff;
+  width: 100%;
+}
+
+/* line 991, ../../../../Desktop/woostore/assets/css/main.scss */
+.products .products_list .product_item .product_item_footer .subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  color: #111B25;
+  letter-spacing: 1.5px;
+}
+
+/* line 998, ../../../../Desktop/woostore/assets/css/main.scss */
+.products .products_list .product_item .product_item_footer .details_link {
+  text-decoration: none;
+}
+
+/* line 1001, ../../../../Desktop/woostore/assets/css/main.scss */
+.products .products_list .product_item .product_item_footer .details_link button {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 1.5px;
+  background: linear-gradient(90deg, #f9423a 0%, #fb9700 100%);
+  border-color: #ffffff;
+  border-radius: 0;
+  padding: 10px 25px;
+}
+
+/* line 1017, ../../../../Desktop/woostore/assets/css/main.scss */
+.products_single {
+  background-color: #fff;
+  margin-bottom: 25px;
+}
+
+/* line 1021, ../../../../Desktop/woostore/assets/css/main.scss */
+.products_single .products_list_single {
+  border: 1px solid #eee;
+}
+
+/* line 1024, ../../../../Desktop/woostore/assets/css/main.scss */
+.products_single .products_list_single .product_item_image_wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(238, 238, 238, 0.5);
+}
+
+/* line 1032, ../../../../Desktop/woostore/assets/css/main.scss */
+.products_single .products_list_single .product_item_image_wrapper .product_item_image {
+  max-width: 100%;
+}
+
+/* line 1039, ../../../../Desktop/woostore/assets/css/main.scss */
+.products_single .products_list_single .product_item_content {
+  padding-top: 25px;
+}
+
+/* line 1042, ../../../../Desktop/woostore/assets/css/main.scss */
+.products_single .products_list_single .product_item_content .title {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #f9423a;
+  margin-top: 35px;
+  margin-bottom: 48px;
+}
+
+/* line 1052, ../../../../Desktop/woostore/assets/css/main.scss */
+.products_single .products_list_single .product_item_content .price {
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 1.5px;
+  color: #8a8d8f;
+  margin-bottom: 35px;
+}
+
+/* line 1060, ../../../../Desktop/woostore/assets/css/main.scss */
+.products_single .products_list_single .product_item_content .description {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  color: #adb7cc;
+  margin-bottom: 35px;
+}
+
+/* line 1068, ../../../../Desktop/woostore/assets/css/main.scss */
+.products_single .products_list_single .product_item_content .product_item_footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+}
+
+/* line 1074, ../../../../Desktop/woostore/assets/css/main.scss */
+.products_single .products_list_single .product_item_content .product_item_footer .details_link {
+  text-decoration: none;
+}
+
+/* line 1077, ../../../../Desktop/woostore/assets/css/main.scss */
+.products_single .products_list_single .product_item_content .product_item_footer .details_link button {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 1.5px;
+  background: linear-gradient(90deg, #f9423a 0%, #fb9700 100%);
+  border-color: #ffffff;
+  border-radius: 0;
+  padding: 15px 23px;
+}
+
+/* line 1094, ../../../../Desktop/woostore/assets/css/main.scss */
+.site_footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 15px solid #344D68;
+  background-color: #fff;
+}
+
+/* line 1102, ../../../../Desktop/woostore/assets/css/main.scss */
+.site_footer .footer_title {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+/* line 1111, ../../../../Desktop/woostore/assets/css/main.scss */
+.site_footer .footer_list {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* line 1115, ../../../../Desktop/woostore/assets/css/main.scss */
+.site_footer .footer_list .list_group_item {
+  border: none !important;
+  padding: 3px 0px;
+  background-color: transparent;
+}
+
+/* line 1120, ../../../../Desktop/woostore/assets/css/main.scss */
+.site_footer .footer_list .list_group_item a {
+  display: flex;
+  margin-bottom: 5px;
+  color: #111B25;
+  text-decoration: none;
+}
+
+/* line 1126, ../../../../Desktop/woostore/assets/css/main.scss */
+.site_footer .footer_list .list_group_item a i {
+  color: #111B25;
+  margin-right: 7px;
+  line-height: 20px;
+  font-size: 18px;
+}
+
+/* line 1133, ../../../../Desktop/woostore/assets/css/main.scss */
+.site_footer .footer_list .list_group_item a span {
+  word-break: break-word;
+}
+
+/* line 1139, ../../../../Desktop/woostore/assets/css/main.scss */
+.site_footer .footer_list .list_group_item .footer_logo img {
+  width: 100px;
+}
+
+/* line 1147, ../../../../Desktop/woostore/assets/css/main.scss */
+.copyright {
+  padding: 15px 0;
+  background-color: #344D68;
+}
+
+/* line 1151, ../../../../Desktop/woostore/assets/css/main.scss */
+.copyright p {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* line 1159, ../../../../Desktop/woostore/assets/css/main.scss */
+.contact_form {
+  border-bottom: 1px solid #eee;
+}
+
+/* line 1162, ../../../../Desktop/woostore/assets/css/main.scss */
+.contact_form h6 {
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+/* line 1167, ../../../../Desktop/woostore/assets/css/main.scss */
+.contact_form .text_phone {
+  color: #00e095;
+}
+
+/* line 1171, ../../../../Desktop/woostore/assets/css/main.scss */
+.contact_form a {
+  text-decoration: none;
+  color: #111B25;
+}
+
+/* line 1177, ../../../../Desktop/woostore/assets/css/main.scss */
+.contact_form .open_time p {
+  margin-bottom: 5px;
+}
+
+/* line 1183, ../../../../Desktop/woostore/assets/css/main.scss */
+.contact_form .social_icons i {
+  font-size: 18px;
+  color: #111B25;
+}
+
+/* line 1189, ../../../../Desktop/woostore/assets/css/main.scss */
+.contact_form iframe {
+  width: 100%;
+  height: 380px;
+}
+
+/*# sourceMappingURL=main.css.map */

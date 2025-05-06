@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Kartalam Order Form with Payment Gateway</title>
+  <link rel="shortcut icon" href="assets/images/products/kLogo.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    .kartalam-container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+    }
+
+    .kartalam-title {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .kartalam-input, .kartalam-select, textarea {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .kartalam-btn {
+      display: block;
+      width: 100%;
+      padding: 0.75rem;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .kartalam-btn:hover {
+      background-color: #0056b3;
+    }
+
+    #priceDisplay {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .payment-section {
+      margin-top: 2rem;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #eef;
+    }
+
+    .payment-input {
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="kartalam-container">
+    <h2 class="kartalam-title">Kartalam Prosthetic Hand Order Form</h2>
+    <form id="kartalamOrderForm" onsubmit="processOrder(event)">
+      <h3>Customer Information</h3>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required class="kartalam-input">
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required class="kartalam-input">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required class="kartalam-input">
+
+      <h3>Hand Type & Features</h3>
+      <label for="handType">Hand Type:</label>
+      <select id="handType" name="handType" required class="kartalam-select">
+        <option value="">Select Hand Type</option>
+        <option value="basic">Basic Model (₹100,000)</option>
+        <option value="advanced">Advanced Model (₹150,000)</option>
+        <option value="premium">Premium Model (₹200,000)</option>
+      </select>
+
+      <label for="color">Color Option:</label>
+      <select id="color" name="color" class="kartalam-select">
+        <option value="default">Default</option>
+        <option value="custom">Custom (₹5,000)</option>
+      </select>
+
+      <div>
+        <input type="checkbox" id="gripOption1" name="gripOptions" value="10000" class="kartalam-checkbox">
+        <label for="gripOption1">Grip Option 1 (₹10,000)</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="tempSensor" name="additionalFeatures" value="5000" class="kartalam-checkbox">
+        <label for="tempSensor">Temperature Sensor (₹5,000)</label>
+      </div>
+
+      <button type="button" class="kartalam-btn" onclick="calculatePrice()">Calculate Price</button>
+      <div id="priceDisplay"></div>
+
+      <div class="payment-section">
+        <h3>Payment</h3>
+        <label for="paymentMethod">Select Payment Method:</label>
+        <select id="paymentMethod" name="paymentMethod" required class="kartalam-select payment-input">
+          <option value="">Choose Payment Method</option>
+          <option value="upi">UPI</option>
+          <option value="creditCard">Credit Card</option>
+          <option value="debitCard">Debit Card</option>
+          <option value="netBanking">Net Banking</option>
+        </select>
+
+        <label for="paymentScreenshot">Upload Payment Screenshot:</label>
+        <input type="file" id="paymentScreenshot" name="paymentScreenshot" required class="kartalam-input">
+      </div>
+
+      <button type="submit" class="kartalam-btn">Submit Order</button>
+    </form>
+  </main>
+
+  <script>
+    function calculatePrice() {
+      let price = 0;
+      const handType = document.getElementById("handType").value;
+      const color = document.getElementById("color").value;
+
+      if (handType === "basic") price += 100000;
+      if (handType === "advanced") price += 150000;
+      if (handType === "premium") price += 200000;
+
+      if (color === "custom") price += 5000;
+
+      if (document.getElementById("gripOption1").checked) price += 10000;
+      if (document.getElementById("tempSensor").checked) price += 5000;
+
+      document.getElementById("priceDisplay").innerText = `Total Price: ₹${price}`;
+    }
+
+    function processOrder(event) {
+      event.preventDefault();
+      const paymentMethod = document.getElementById("paymentMethod").value;
+      const paymentScreenshot = document.getElementById("paymentScreenshot").files[0];
+
+      if (!paymentMethod || !paymentScreenshot) {
+        alert("Please complete all payment details.");
+        return;
+      }
+
+      alert("Order submitted successfully!");
+      document.getElementById("kartalamOrderForm").reset();
+      document.getElementById("priceDisplay").innerText = "";
+    }
+  </script>
+</body>
+
+</html>
